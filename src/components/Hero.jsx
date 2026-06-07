@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // Adjusted import path for the video
-import heroVideo from '../assets/hero video/intro-video.MP4';
+import heroVideo from "../assets/hero video/intro-video.mp4";
 
 const Hero = () => {
   const videoRef = useRef(null);

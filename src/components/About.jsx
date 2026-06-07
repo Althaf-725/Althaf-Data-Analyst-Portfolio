@@ -1,5 +1,5 @@
 import React from 'react';
-import stackImage from "../assets/about/Image.png";
+import stackImage from "../assets/about/image.png";
 import powerbiImage from "../assets/about/Power BI.png";
 import pythonImage from "../assets/about/python.png";
 import sqlImage from "../assets/about/MySQL.png";
