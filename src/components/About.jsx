@@ -1,12 +1,13 @@
 import React from 'react';
-import stackImage from '../assets/about/image.png';
-import reactImage from '../assets/about/react.png';
-import nodeImage from '../assets/about/node.png';
-import mongoImage from '../assets/about/mongodb.png';
+import stackImage from "../assets/about/Image.png";
+import powerbiImage from "../assets/about/Power BI.png";
+import pythonImage from "../assets/about/python.png";
+import sqlImage from "../assets/about/MySQL.png";
 
 const About = () => {
   return (
-    <section className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id ="about"
+    className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
         
         {/* Left Side: ID Badge and Skills */}
@@ -42,27 +43,27 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Leeshark</span>, a passionate full-stack developer based in [Location], dedicated to crafting clean, functional, and highly scalable web applications.
+            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Althaf</span>, an aspiring Data Analyst passionate about transforming raw data into meaningful business insights. I specialize in Power BI, Python, SQL, and Advanced Excel, creating dashboards, reports, and analytical solutions that help drive data-informed decisions.
           </p>
 
           {/* Horizontal Skills Row (Transparent & Large) */}
           <div className="flex items-center gap-10 mt-8">
             <img 
               data-aos="zoom-in" data-aos-delay="300"
-              src={reactImage} 
-              alt="React" 
+              src={powerbiImage}
+              alt="Power BI" 
               className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
             />
             <img 
               data-aos="zoom-in" data-aos-delay="450"
-              src={nodeImage} 
-              alt="Node.js" 
+              src={pythonImage} 
+              alt="Python" 
               className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
             />
             <img 
               data-aos="zoom-in" data-aos-delay="600"
-              src={mongoImage} 
-              alt="MongoDB" 
+              src={sqlImage} 
+              alt="SQL" 
               className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
             />
           </div>

@@ -21,20 +21,20 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isOpen 
-          ? 'bg-[#ff2a2a] py-4'
-          : isScrolled 
-            ? 'bg-transparent py-4' 
-            : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+  isOpen
+    ? 'bg-black/80 backdrop-blur-xl border-b border-white/10 py-4'
+    : isScrolled
+      ? 'bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)] py-4'
+      : 'bg-transparent py-6'
+}`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         
         {/* Left Side: Logo/Name */}
         <div className="flex items-center">
           <a href="#" className="text-white text-2xl font-black tracking-tight">
-            Leeshark<span className="text-red-500">.</span>
+            Althaf<span className="text-red-500">.</span>
           </a>
         </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             href="#contact" 
             className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
           >
-            Hire Me
+            View Resume
           </a>
         </div>
 
@@ -103,7 +103,7 @@ const Navbar = () => {
                onClick={() => setIsOpen(false)} 
                className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
              >
-               Hire Me
+               View Resume
              </a>
           </div>
         </div>

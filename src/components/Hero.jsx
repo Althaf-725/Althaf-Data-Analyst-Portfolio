@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // Adjusted import path for the video
-import heroVideo from '../assets/hero video/Developer_introduces_self_and_sk…_202606051918.mp4';
+import heroVideo from '../assets/hero video/intro-video.MP4';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -32,7 +32,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black">
+    <section
+      id="home"
+      className="relative w-full h-screen overflow-hidden bg-black">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -51,12 +53,24 @@ const Hero = () => {
         {/* Left Side: Text and Buttons */}
         <div className="flex flex-col items-start text-left max-w-2xl w-full">
           {/* Main Heading */}
-          <h1 
-            data-aos="fade-up"
-            className="text-white text-3xl md:text-5xl font-bold mb-4 tracking-tight"
-          >
-            Hi, I’m a <br /> <span className="text-transparent [-webkit-text-stroke:1.5px_black]">Full Stack Developer</span>
-          </h1>
+          <h1
+  data-aos="fade-up"
+  className="text-black text-3xl md:text-5xl font-bold tracking-tight"
+>
+  Hi, I'm <br />
+  <span className="text-black">Althaf S</span>
+</h1>
+
+<div
+  data-aos="fade-up"
+  data-aos-delay="100"
+  className="inline-flex items-center gap-3 px-6 py-3 mt-3 mb-5 rounded-full bg-white/20 backdrop-blur-xl border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.15)]"
+>
+  <div className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></div>
+  <span className="text-black font-semibold text-sm md:text-base tracking-wide">
+    Aspiring Data Analyst
+  </span>
+</div>
 
           {/* Subheading */}
           <p 
@@ -64,7 +78,7 @@ const Hero = () => {
             data-aos-delay="200"
             className="text-white text-sm md:text-lg font-semibold mb-8 max-w-md drop-shadow-md"
           >
-            I build fast, scalable and modern web applications using React, Node.js and Tailwind CSS.
+              I transform raw data into actionable insights using Power BI, Python, SQL and Advanced Excel. Passionate about data visualization, dashboard development and business analytics.
           </p>
 
           {/* Buttons */}
@@ -74,14 +88,20 @@ const Hero = () => {
             className="flex flex-row flex-wrap items-center gap-3 w-full"
           >
             {/* Primary Button */}
-            <button className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-md">
-              View My Work
-            </button>
+            <a
+  href="#projects"
+  className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-white text-black font-semibold hover:scale-105 transition-all"
+>
+  View Projects
+</a>
             
             {/* Secondary Button - Glassmorphism style */}
-            <button className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white text-white font-semibold hover:bg-black/60 transition-all duration-300 backdrop-blur-md">
-              Contact Me
-            </button>
+            <a
+  href="#contact"
+  className="px-4 py-2 md:px-6 md:py-2 text-xs md:text-base rounded-full bg-black/40 border border-white/20 text-white backdrop-blur-xl hover:scale-105 transition-all"
+>
+  Contact Me
+</a>
           </div>
         </div>
 
